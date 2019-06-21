@@ -1,7 +1,7 @@
 /**
  * Passa os dados do cliente para o Modal, e atualiza o link para exclusão
  */
-$('#delete-modal').on('show.bs.modal', function (event) {
+$('#delete-modal-cliente').on('show.bs.modal', function (event) {
   
     var button = $(event.relatedTarget);
     var id = button.data('cliente');
@@ -14,7 +14,7 @@ $('#delete-modal').on('show.bs.modal', function (event) {
 /**
  * Passa os dados do serviço para o Modal, e atualiza o link para exclusão
  */
-$('#delete-modal').on('show.bs.modal', function (event) {
+$('#delete-modal-servico').on('show.bs.modal', function (event) {
   
     var button = $(event.relatedTarget);
     var id = button.data('servico');
@@ -27,7 +27,7 @@ $('#delete-modal').on('show.bs.modal', function (event) {
 /**
  * Passa os dados do usuario para o Modal, e atualiza o link para exclusão
  */
-$('#delete-modal').on('show.bs.modal', function (event) {
+$('#delete-modal-usuario').on('show.bs.modal', function (event) {
   
     var button = $(event.relatedTarget);
     var id = button.data('user');

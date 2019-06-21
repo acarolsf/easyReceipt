@@ -21,13 +21,12 @@
       <input type="text" class="form-control" name="cliente['cpf']">
     </div>
 
-    <div class="row">
-    <div class="form-group col-md-3">
+    <div class="form-group col-md-5">
       <label for="campo1">Cidade</label>
-      <input type="text" class="form-control" name="cliente['Cidade']">
+      <input type="text" class="form-control" name="cliente['cidade']">
     </div>
     
-    <div class="form-group col-md-2">
+    <div class="form-group col-md-3">
       <label for="campo2">Telefone</label>
       <input type="text" class="form-control" name="cliente['telefone']">
     </div>
