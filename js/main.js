@@ -35,4 +35,12 @@ $('#delete-modal-usuario').on('show.bs.modal', function (event) {
     var modal = $(this);
     modal.find('.modal-title').text('Excluir Usuário #' + id);
     modal.find('#confirm').attr('href', 'delete.php?id=' + id);
-  })
+})
+  
+$(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+});
