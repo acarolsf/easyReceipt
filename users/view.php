@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2><?php echo $cliente['nome']; ?></h2>
+<h2><?php echo $user['nome']; ?></h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
@@ -14,23 +14,21 @@
 
 <dl class="dl-horizontal">
 	<dt>Nome:</dt>
-	<dd><?php echo $cliente['nome']; ?></dd>
+	<dd><?php echo $user['nome']; ?></dd>
 
-	<dt>CPF:</dt>
-	<dd><?php echo $cliente['cpf']; ?></dd>
+	<dt>E-mail:</dt>
+	<dd><?php echo $user['email']; ?></dd>
 
-	<dt>Cidade:</dt>
-    <dd><?php echo $cliente['cidade']; ?></dd>
-    
-    <dt>Telefone:</dt>
-	<dd><?php echo $cliente['telefone']; ?></dd>
+	<dt>Username:</dt>
+	<dd><?php echo $user['username']; ?></dd>
+
 </dl>
 
 
 
 <div id="actions" class="row">
 	<div class="col-md-12">
-	  <a href="edit.php?id=<?php echo $cliente['id']; ?>" class="btn btn-primary">Editar</a>
+	  <a href="edit.php?id=<?php echo $user['id']; ?>" class="btn btn-primary">Editar</a>
 	  <a href="index.php" class="btn btn-default">Voltar</a>
 	</div>
 </div>
