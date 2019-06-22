@@ -29,25 +29,10 @@ function add() {
       $recibo['data'] = $today->format("Y-m-d H:i:s");
       
       save('recibos', $recibo);
-      header('location: index.php');
-    }
-  }
-
-  function addI() {
-
-    if (!empty($_POST['recibo'])) {
-      
-      $today = 
-        date_create('now', new DateTimeZone('America/Sao_Paulo'));
-  
-      $recibo = $_POST['recibo'];
-      $recibo['data'] = $today->format("Y-m-d H:i:s");
-      
-      save('recibos', $recibo);
       header('location: imprimir.php');
       header('location: index.php');
     }
-  }
+}
 
  
   function addS() {

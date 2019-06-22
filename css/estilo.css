@@ -22,3 +22,8 @@ fieldset{
    .center{
     text-align: center;
    }
+
+   div{
+    text-align: center; 
+    margin-left:auto
+   }

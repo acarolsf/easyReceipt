@@ -34,25 +34,24 @@
                 <option value="">Nenhum serviço encontrado</option>
                 <?php endif; ?>
             </select>
-        </div>
-
-        <div class="form-group col-md-8">
-            <label for="servicos">Serviços</label>
-            <select class="form-control" name="recibo[id_servico]">
-                <?php if ($servicos) : ?>
-                <?php foreach ($servicos as $servico) : ?>
-                <option value="<?php echo $servico['id']; ?>"><?php echo $servico['descricao']; ?></option>
-                <?php endforeach; ?>
-                <?php else : ?>
-                <option value="">Nenhum serviço encontrado</option>
-                <?php endif; ?>
-            </select>
-        </div>
-        <div class="form-group col-md-2" style="margin-top:25px">
-            <button type="submit"  class="btn btn-primary bmd-btn-fab">
-                <i class="material-icons fa fa-plus"></i>
-            </button>
-        </div>
+</div>
+            <div class="form-group col-md-8">
+                <label for="servicos">Serviços</label>
+                <select class="form-control" name="recibo[id_servico]">
+                    <?php if ($servicos) : ?>
+                    <?php foreach ($servicos as $servico) : ?>
+                    <option value="<?php echo $servico['id']; ?>"><?php echo $servico['descricao']; ?></option>
+                    <?php endforeach; ?>
+                    <?php else : ?>
+                    <option value="">Nenhum serviço encontrado</option>
+                    <?php endif; ?>
+                </select>
+            </div>
+            <div class="form-group col-md-2" style="margin-top:25px">
+                <button type="submit" onClick="addS()"  class="btn btn-primary bmd-btn-fab">
+                    <i class="material-icons fa fa-plus"></i>
+                </button>
+            </div>
         <div class="form-group col-md-12">
             <table class="table table-hover">
                 <thead>
