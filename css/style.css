@@ -10,7 +10,6 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
 }
 
 a, a:hover, a:focus {
@@ -21,7 +20,7 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #696969;
+
     color: #fff;
     transition: all 0.3s;
     width: 250px;
@@ -34,7 +33,6 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: grey;
 }
 
 #sidebar ul.components {
@@ -53,18 +51,15 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: gray;
 }
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: rgb(155, 145, 145);
 }
 
 .wrapper {

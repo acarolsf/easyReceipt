@@ -27,7 +27,7 @@
 		<a href="clientes" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<i class="fa fa-user fa-5x"></i>
+					<i class="fa fa-users fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
 					<p>Clientes</p>
@@ -40,7 +40,7 @@
 		<a href="servicos" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<i class="fa fa-cloud fa-5x"></i>
+					<i class="fa fa-gear fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
 					<p>Serviços</p>
@@ -66,7 +66,7 @@
 		<a href="recibos" class="btn btn-default">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<i class="fa fa-paper fa-5x"></i>
+					<i class="fa fa-file-text fa-5x"></i>
 				</div>
 				<div class="col-xs-12 text-center">
 					<p>Recibos</p>
