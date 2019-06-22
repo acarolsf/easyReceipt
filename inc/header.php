@@ -53,7 +53,7 @@
                 </ul>
             </li>
           </ul>
-          <ul class="nav navbar-nav">          
+          <!-- <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Usuários <span class="caret"></span>
@@ -63,7 +63,7 @@
                     <li><a href="<?php echo BASEURL; ?>usuarios/add.php">Novo Usuário</a></li>
                 </ul>
             </li>
-          </ul>
+          </ul> -->
           <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
