@@ -14,7 +14,7 @@
 
 <dl class="dl-horizontal">
 	<dt>Data:</dt>
-	<dd><?php echo $recibo['data']; ?></dd>
+	<dd><?php echo $recibo['generated']; ?></dd>
 
 	<dt>Cliente:</dt>
 	<dd><?php echo $recibo['id_cliente']; ?></dd>

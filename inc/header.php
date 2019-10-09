@@ -37,8 +37,8 @@
                     Clientes <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>clientes">Gerenciar Clientes</a></li>
-                    <li><a href="<?php echo BASEURL; ?>clientes/add.php">Novo Cliente</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/clientes">Gerenciar Clientes</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/clientes/add.php">Novo Cliente</a></li>
                 </ul>
             </li>
           </ul>
@@ -48,30 +48,30 @@
                     Serviços <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>servicos">Gerenciar Serviços</a></li>
-                    <li><a href="<?php echo BASEURL; ?>servicos/add.php">Novo Serviços</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/servicos">Gerenciar Serviços</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/servicos/add.php">Novo Serviços</a></li>
                 </ul>
             </li>
           </ul>
-          <!-- <ul class="nav navbar-nav">          
+          <ul class="nav navbar-nav">          
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="dropdown-toggle" disabled data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Usuários <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>usuarios">Gerenciar Usuários</a></li>
-                    <li><a href="<?php echo BASEURL; ?>usuarios/add.php">Novo Usuário</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/usuarios">Gerenciar Usuários</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/usuarios/add.php">Novo Usuário</a></li>
                 </ul>
             </li>
-          </ul> -->
+          </ul>
           <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Recibos <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>recibos">Gerenciar Recibos</a></li>
-                    <li><a href="<?php echo BASEURL; ?>recibos/add.php">Novo Recibo</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/recibos">Gerenciar Recibos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>pages/recibos/add.php">Novo Recibo</a></li>
                 </ul>
             </li>
           </ul>

@@ -26,7 +26,7 @@ function add() {
         date_create('now', new DateTimeZone('America/Sao_Paulo'));
   
       $recibo = $_POST['recibo'];
-      $recibo['data'] = $today->format("Y-m-d H:i:s");
+      $recibo['generated'] = $today->format("Y-m-d H:i:s");
       
       save('recibos', $recibo);
       header('location: imprimir.php');

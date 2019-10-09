@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Recibo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <fieldset>
+        <div class="row" style="text-align: center; margin-left:auto">
+            <div class="col-md-12" style="text-align: center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3><strong>Barreto Motos</strong></h3>
+                        Rua Joaquim Bezerra, xxx - João XXIII - Caicó <br>
+                        Telefone: 84 9 9942-2708 <br>
+                        ======================================================================================== <br>
+                    </div>
+                    <div class="col-md-6" style="text-align:left;margin-left:20px">
+                        <label><strong>Número do Recibo: </strong></label>
+                        [[recibo.id]]
+                    </div>
+                    <div class="col-md-6" style="text-align: right; margin-top:-27px">
+                        <label end><strong>Data: </strong></label>
+                        [[recibo.data]]
+                    </div>
+                </div>
+            <div class="col-md-6" style="text-align: left; margin-left: 5px">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Cliente: </strong>
+                        [[cliente.nome]]
+                    </div>
+                    <div class="col-md-6"style="text-align: right; margin-left: -11px">
+                        <strong>CPF: </strong>
+                        [[cliente.cpf]]
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="text-align: left; margin-left: 5px">
+                <div class="row">
+                    <div class="col-md-6" style="text-align:left;margin-top:5px">
+                        <strong>Vendedor: </strong>
+                        [[usuario.nome]]
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-left:-20px; text-align: right">
+                        <br><br>
+                        ========================================================================================
+                        Cód&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Descrição&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Valor
+                        ========================================================================================
+                    </div>
+                    <div class="col-md-12" *ngFor="let servico of servicos" style="margin-left:-20px; text-align: right">
+                        <br>
+                        [[servico.id]]&emsp;&emsp;&emsp;&emsp;[[servico.descricao]]&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;[[servico.valor]]
+                    </div>
+                    <div class="col-md-12" style="margin-left:-20px; text-align: right">
+                        <br><br>
+                        ========================================================================================
+                        <strong>Total a vista: [[sRecibo.valor]]</strong>
+                    </div>
+                    <div class="col-md-12" style="margin-left:-20px; text-align: left">
+                        <strong> Forma de pagamento: </strong>
+                            [[recibo.pagamento]]
+                    </div>
+                    <div class="col-md-12" style="margin-left:-20px; text-align: right">
+                        <strong>Total pago: </strong>
+                            [[sRecibo.valor]]
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <br><br><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            ____________________________________ <br>
+                             Vendedor   
+                        </div>
+                        <div class="col-md-6">
+                            ____________________________________<br>
+                            Cliente
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    </body>
+</html>

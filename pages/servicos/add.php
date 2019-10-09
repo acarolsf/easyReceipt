@@ -12,13 +12,13 @@
   <hr />
   <div class="row">
     <div class="form-group col-md-12">
-      <label for="name">Descricao</label>
+      <label for="descricao">Descricao</label>
       <input type="text" class="form-control" name="servico['descricao']">
     </div>
 
     <div class="form-group col-md-3">
-      <label for="campo2">Preco</label>
-      <input type="text" class="form-control" name="servico['preco']">
+      <label for="preco">Preco</label>
+      <input type="number" class="form-control" name="servico['preco']">
     </div>
 
     

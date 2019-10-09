@@ -11,7 +11,7 @@
 			<h2>Recibos</h2>
 		</div>
 		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Novo Recibo</a>
+	    	<a class="btn btn-primary" href="add.php" data-servico="<?php echo $recibo['id']?>"><i class="fa fa-plus"></i> Novo Recibo</a>
 	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
 	    </div>
 	</div>
@@ -46,11 +46,11 @@
 		<td><?php echo $recibo['id_cliente']; ?></td>
 		<td><?php echo $recibo['id_usuario']; ?></td>
 		<td><?php echo $recibo['valor']; ?></td>
-		<td><?php echo $recibo['data']; ?></td>
+		<td><?php echo $recibo['generated']; ?></td>
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $recibo['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
 			<a href="edit.php?id=<?php echo $recibo['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" disabled data-toggle="modal">
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal">
 				<i class="fa fa-trash"></i> Excluir
 			</a>
 		</td>
